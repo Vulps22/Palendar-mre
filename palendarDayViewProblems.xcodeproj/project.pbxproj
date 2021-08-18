@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		7D47C25E26CD17D100389BB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C25D26CD17D100389BB0 /* AppDelegate.swift */; };
-		7D47C26026CD17D100389BB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C25F26CD17D100389BB0 /* SceneDelegate.swift */; };
-		7D47C26226CD17D100389BB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C26126CD17D100389BB0 /* ContentView.swift */; };
 		7D47C26426CD17FE00389BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D47C26326CD17FE00389BB0 /* Assets.xcassets */; };
-		7D47C26726CD17FE00389BB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D47C26626CD17FE00389BB0 /* Preview Assets.xcassets */; };
 		7D47C26A26CD17FE00389BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D47C26826CD17FE00389BB0 /* LaunchScreen.storyboard */; };
+		7D47C27226CD182900389BB0 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C27126CD182900389BB0 /* DayViewController.swift */; };
+		7D47C27426CD18B900389BB0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C27326CD18B900389BB0 /* Event.swift */; };
+		7D47C27626CD19F700389BB0 /* CalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C27526CD19F700389BB0 /* CalendarDay.swift */; };
+		7D47C27826CD1AB700389BB0 /* EventContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47C27726CD1AB700389BB0 /* EventContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7D47C25A26CD17D100389BB0 /* palendarDayViewProblems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = palendarDayViewProblems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D47C25D26CD17D100389BB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D47C25F26CD17D100389BB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D47C26126CD17D100389BB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D47C26326CD17FE00389BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D47C26626CD17FE00389BB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D47C26926CD17FE00389BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D47C26B26CD17FE00389BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D47C27126CD182900389BB0 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		7D47C27326CD18B900389BB0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		7D47C27526CD19F700389BB0 /* CalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDay.swift; sourceTree = "<group>"; };
+		7D47C27726CD1AB700389BB0 /* EventContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,22 +59,15 @@
 			isa = PBXGroup;
 			children = (
 				7D47C25D26CD17D100389BB0 /* AppDelegate.swift */,
-				7D47C25F26CD17D100389BB0 /* SceneDelegate.swift */,
-				7D47C26126CD17D100389BB0 /* ContentView.swift */,
 				7D47C26326CD17FE00389BB0 /* Assets.xcassets */,
 				7D47C26826CD17FE00389BB0 /* LaunchScreen.storyboard */,
 				7D47C26B26CD17FE00389BB0 /* Info.plist */,
-				7D47C26526CD17FE00389BB0 /* Preview Content */,
+				7D47C27126CD182900389BB0 /* DayViewController.swift */,
+				7D47C27326CD18B900389BB0 /* Event.swift */,
+				7D47C27526CD19F700389BB0 /* CalendarDay.swift */,
+				7D47C27726CD1AB700389BB0 /* EventContainerView.swift */,
 			);
 			path = palendarDayViewProblems;
-			sourceTree = "<group>";
-		};
-		7D47C26526CD17FE00389BB0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7D47C26626CD17FE00389BB0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +128,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D47C26A26CD17FE00389BB0 /* LaunchScreen.storyboard in Resources */,
-				7D47C26726CD17FE00389BB0 /* Preview Assets.xcassets in Resources */,
 				7D47C26426CD17FE00389BB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D47C27626CD19F700389BB0 /* CalendarDay.swift in Sources */,
+				7D47C27826CD1AB700389BB0 /* EventContainerView.swift in Sources */,
 				7D47C25E26CD17D100389BB0 /* AppDelegate.swift in Sources */,
-				7D47C26026CD17D100389BB0 /* SceneDelegate.swift in Sources */,
-				7D47C26226CD17D100389BB0 /* ContentView.swift in Sources */,
+				7D47C27426CD18B900389BB0 /* Event.swift in Sources */,
+				7D47C27226CD182900389BB0 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"palendarDayViewProblems/Preview Content\"";
+				DEVELOPMENT_TEAM = 57WNKNHVA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = palendarDayViewProblems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,7 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"palendarDayViewProblems/Preview Content\"";
+				DEVELOPMENT_TEAM = 57WNKNHVA2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = palendarDayViewProblems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

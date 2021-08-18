@@ -10,25 +10,36 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let today = CalendarDay(onDay: 12, ofMonth: 10, ofYear: 2021)
+        
+        /*
+            Here we set an event which starts on 12/10/2021 (DD/MM/YYYY)
+            and ends early the next day
+         
+            The DayViewController should display an event container which ends at the bottom of the table view (to represent the event not ending on that day)
+         */
+        
+        
+        today.events.append(Event("0", title: "just a test event", date: "12", month: "10", year: "2021", start: "12/10/2021 13:00", end: "13/10/2021 09:00"))
+        
+        let dayView = DayViewController()
+        
+        dayView.today = today
+        
+        
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = dayView
+        
         return true
-    }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
 
